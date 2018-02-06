@@ -1,5 +1,20 @@
-.about{
+#about{
     min-height: 100vh;
-    background-color: $mainColor;
-    
+    background: url('./../dest/img/Portofolio Background1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .panel{
+      
+        background-color: white;
+        display: flex;
+        img{
+            height: 300px;
+            border-radius: 50%;
+        }
+        
+    }
 }

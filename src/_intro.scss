@@ -1,0 +1,30 @@
+.intro{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #00798C, $mainColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    :nth-child(1){
+        padding: 20px;
+        font-size: 60px;
+    }
+    :nth-child(2){
+        padding: 20px;
+        font-size: 35px;
+    }
+    #arrow{
+        animation: arrow 0.5s infinite ease-in alternate;
+    }
+    
+}
+
+@keyframes arrow{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}

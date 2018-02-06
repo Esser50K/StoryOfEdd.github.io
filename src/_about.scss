@@ -6,17 +6,21 @@
     background-position: bottom;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    position: relative;
+    
     .panel{
+        color: white;
         background-color: transparent;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        width: 80%;
+        width: 90%;
         min-height: 50vh;
         .myself{
-            text-align: center;
+            
+            flex:2;
             img{
                 height: 300px;
                 border-radius: 50%;
@@ -24,7 +28,7 @@
         }
         .boxes{
             min-height: 50vh;
-            width: 40%;
+            flex: 1;
             display: flex;
             flex-direction: column;
           
@@ -36,12 +40,17 @@
                 justify-content: space-around;
                 flex:1;
                 h1{
+                font-size: 45px;
                 font-family: $mainFont;
                 margin: 5px 0px;
                 }
                 p{
                     font-size: 18px;
-                    line-height: 1.7em;
+                    line-height: 2em;
+                    font-family: $secondFont;
+                }
+                span{
+                    color: #BC402D;
                 }
             }
             .box2{
@@ -50,6 +59,7 @@
                 justify-content: space-around;
                 flex:1;
                 h1{
+                    font-size: 45px;
                     font-family: $mainFont;
                     margin: 5px 0px; 
                 }
@@ -63,5 +73,97 @@
             } 
         }
         
+    }
+    #star{
+        position: absolute;
+        height: 10px;
+        top: 50px;
+        opacity: 0;
+        transform: translate(0px,0px);
+        transition: all 1s;
+        
+      
+    }
+}
+
+@keyframes starFall{
+    0%{
+        
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
+
+    100%{
+        
+        opacity: 0;
+        
+        transform: translate(200px,300px);
+    }
+}
+
+@keyframes starFall2{
+    0%{
+        
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translate(-400px,0px);
+    }
+
+    100%{
+        
+        opacity: 0;
+        
+        transform: translate(-200px,300px);
+    }
+}
+@keyframes starFall3{
+    0%{
+        
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translate(500px,0px);
+    }
+
+    100%{
+        
+        opacity: 0;
+        
+        transform: translate(-200px,300px);
+    }
+}
+@keyframes starFall4{
+    0%{
+        
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translate(200px,100px);
+    }
+
+    100%{
+        
+        opacity: 0;
+        
+        transform: translate(130px,200px);
     }
 }

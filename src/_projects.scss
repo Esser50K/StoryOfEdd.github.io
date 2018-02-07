@@ -1,0 +1,30 @@
+#projects{
+    min-height: 100vh;
+    font-family: $mainFont;
+    .projects-title{
+        min-height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+    }
+    .project-boxes{
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        
+        
+       .project-box1{
+           img{
+               width: 20%;
+           }
+       }
+       .project-box2{
+           img{
+               width: 20%;
+           }
+       }
+    }
+}

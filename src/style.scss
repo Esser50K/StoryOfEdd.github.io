@@ -1,59 +1,50 @@
-$mainColor : #050F22;
-$mainFont :'Cabin', sans-serif;
-$secondFont: 'Work Sans', sans-serif;
+$mainColor: #050F22;
+$mainFont :'Cabin',
+sans-serif;
+$secondFont: 'Work Sans',
+sans-serif;
 @import 'reset';
 @import 'intro';
 @import 'about';
-
+@import 'projects';
 
 
 @media only screen and (max-width: 768px) {
-   
-   .intro{
-       
-       :nth-child(1){
-           font-size: 40px;
-           
-       }
-       :nth-child(2){
-           font-size: 20px;
-       }
-   }
-   #about{
+    .intro {
+        :nth-child(1) {
+            font-size: 40px;
+        }
+        :nth-child(2) {
+            font-size: 20px;
+        }
+    }
+    #about {
         background-image: url('./../dest/img/Portofolio Background Mobile.svg');
-        
-       
-       .panel{
-           align-items: flex-start;
-           width: 95%;
-           margin: auto;
-            min-height: 90vh;
+        .panel {
+            align-items: flex-start;
+            width: 95%;
+            margin: auto;
+            min-height: 80vh;
             
-           
-
-           .myself{
-               order: 1;
-               text-align: center;
-               padding-bottom: 40px;
+            .myself {
+                order: 1;
+                text-align: center;
+                padding-bottom: 40px;
                 display: none;
-             
-               img{
-                   height: 200px;
-                   
-               }
-           }
-           .boxes{
-              
-               flex-direction: column;
-               
-               .box1{
-                   padding: 15px;
-                h1{
-                    padding-bottom: 20px;
-                    text-align: center;
+                img {
+                    height: 200px;
                 }
-               }
-           }
-       }
-   }
+            }
+            .boxes {
+                flex-direction: column;
+                .box1 {
+                    padding: 15px;
+                    h1 {
+                        padding-bottom: 20px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }

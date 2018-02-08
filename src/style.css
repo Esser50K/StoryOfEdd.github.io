@@ -325,6 +325,8 @@ footer {
     font-size: 20px; }
   #about {
     background-image: url("./../dest/img/Portofolio Background Mobile.svg"); }
+    #about .to-projects {
+      display: none; }
     #about .panel {
       align-items: flex-start;
       width: 95%;

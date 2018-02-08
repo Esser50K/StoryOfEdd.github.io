@@ -18,7 +18,11 @@ sans-serif;
             font-size: 20px;
         }
     }
+   
     #about {
+        .to-projects{
+            display: none;
+        }
         background-image: url('./../dest/img/Portofolio Background Mobile.svg');
         .panel {
             align-items: flex-start;

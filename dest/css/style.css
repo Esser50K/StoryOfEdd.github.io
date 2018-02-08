@@ -272,8 +272,8 @@
             transform: translate(0px, 0px); }
   100% {
     opacity: 0;
-    -webkit-transform: translate(200px, 300px);
-            transform: translate(200px, 300px); } }
+    -webkit-transform: translate(200px, 200px);
+            transform: translate(200px, 200px); } }
 
 @keyframes starFall {
   0% {
@@ -286,8 +286,8 @@
             transform: translate(0px, 0px); }
   100% {
     opacity: 0;
-    -webkit-transform: translate(200px, 300px);
-            transform: translate(200px, 300px); } }
+    -webkit-transform: translate(1700px, 100px);
+            transform: translate(90px, 90px); } }
 
 @-webkit-keyframes starFall2 {
   0% {
@@ -300,8 +300,8 @@
             transform: translate(-100px, 0px); }
   100% {
     opacity: 0;
-    -webkit-transform: translate(-200px, 300px);
-            transform: translate(-200px, 300px); } }
+    -webkit-transform: translate(-100px, 40px);
+            transform: translate(-100px, 70px); } }
 
 @keyframes starFall2 {
   0% {
@@ -314,8 +314,8 @@
             transform: translate(-100px, 0px); }
   100% {
     opacity: 0;
-    -webkit-transform: translate(-200px, 300px);
-            transform: translate(-200px, 300px); } }
+    -webkit-transform: translate(-150px, 250px);
+            transform: translate(-150px, 250px); } }
 
 @-webkit-keyframes starFall3 {
   0% {
@@ -529,7 +529,6 @@
       .contact form .label input[data-touched]:invalid {
         border-color: red; }
     .contact form button {
-      cursor: pointer;
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
               order: 2;
@@ -574,6 +573,8 @@ footer {
     font-size: 20px; }
   #about {
     background-image: url("./../img/Portofolio Background Mobile.svg"); }
+    #about .to-projects {
+      display: none; }
     #about .panel {
       -webkit-box-align: start;
           -ms-flex-align: start;
@@ -635,7 +636,6 @@ footer {
       margin: auto; }
     .contact form button {
       width: 50%;
-      
       margin: auto; } }
 
 @media only screen and (max-width: 1068px) {

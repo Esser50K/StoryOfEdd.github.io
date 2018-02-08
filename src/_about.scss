@@ -17,7 +17,7 @@
         align-items: center;
         flex-wrap: wrap;
         width: 90%;
-        min-height: 50vh;
+        min-height: 60vh;
         .myself {
             flex: 2;
             img {
@@ -93,8 +93,12 @@
         transition: all 1s;
     }
     .to-projects {
-        padding-top: 40px;
+        
        min-height: 10vh;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
       a{
         color: white;
         text-decoration: none;

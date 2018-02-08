@@ -83,7 +83,6 @@
             }
         }
     }
-  
     #star {
         position: absolute;
         height: 10px;
@@ -93,20 +92,19 @@
         transition: all 1s;
     }
     .to-projects {
-        
-       min-height: 10vh;
-       width: 100%;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-      a{
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        border: 1px solid white;
-        padding: 10px;
-        border-radius: 5px;
-      }
+        min-height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -177,6 +175,3 @@
         transform: translate(130px, 200px);
     }
 }
-
-
-

@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: "Cabin", sans-serif; }
+  font-family: "Didact Gothic", sans-serif; }
   .intro :nth-child(1) {
     padding: 20px;
     font-size: 60px;
@@ -99,7 +99,7 @@
         flex: 1; }
         #about .panel .boxes .box1 h1 {
           font-size: 45px;
-          font-family: "Cabin", sans-serif;
+          font-family: "Didact Gothic", sans-serif;
           margin: 5px 0px; }
         #about .panel .boxes .box1 p {
           font-size: 18px;
@@ -117,7 +117,7 @@
           transform: scale(1.2, 1.2); }
         #about .panel .boxes .box2 h1 {
           font-size: 45px;
-          font-family: "Cabin", sans-serif;
+          font-family: "Didact Gothic", sans-serif;
           margin: 5px 0px; }
         #about .panel .boxes .box2 .skills {
           display: flex;
@@ -207,7 +207,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Cabin", sans-serif;
+    font-family: "Didact Gothic", sans-serif;
     font-size: 35px;
     color: white; }
   #projects .project-boxes {
@@ -235,7 +235,7 @@
         align-items: center;
         justify-content: center;
         flex: 1;
-        font-family: "Cabin", sans-serif; }
+        font-family: "Didact Gothic", sans-serif; }
       #projects .project-boxes .project-box1 img, #projects .project-boxes .project-box2 img, #projects .project-boxes .project-box3 img {
         width: 100%;
         flex: 1; }
@@ -248,6 +248,75 @@
         padding: 10px 0px;
         height: 40px;
         border: none; }
+
+.contact {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F9F9F9; }
+  .contact h1 {
+    font-size: 2.5em;
+    font-family: "Didact Gothic", sans-serif;
+    padding: 20px 30px; }
+  .contact form {
+    min-height: 50vh;
+    box-shadow: 2px 2px 5px #b3b3b3;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    font-family: "Work Sans", sans-serif; }
+    .contact form .label {
+      width: 50%;
+      display: flex;
+      align-items: center; }
+      .contact form .label input, .contact form .label textarea {
+        width: 100%;
+        flex-direction: 1;
+        order: 1;
+        min-height: 30px;
+        border: none;
+        border-bottom: 2px solid #cfcfcf; }
+      .contact form .label :focus {
+        outline: none; }
+        .contact form .label :focus + .Icon {
+          opacity: 1;
+          transform: translateX(0px); }
+      .contact form .label input:valid {
+        border-color: #00697C; }
+      .contact form .label input[data-touched]:invalid {
+        border-color: red; }
+    .contact form button {
+      order: 2;
+      margin: 10px 0px;
+      padding: 10px 20px;
+      background-color: #00697C;
+      border: 2px solid #00697C;
+      color: white;
+      font-family: "Work Sans", sans-serif;
+      border-radius: 5px; }
+    .contact form .Icon {
+      transition: all 0.2s;
+      transform: translateX(-20px);
+      opacity: 0; }
+      .contact form .Icon path {
+        stroke: black;
+        stroke-width: 2px;
+        fill: none; }
+
+footer {
+  min-height: 10vh;
+  background-color: #042538;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
 
 @media only screen and (max-width: 768px) {
   .intro :nth-child(1) {
@@ -277,16 +346,35 @@
             text-align: center; }
   #projects .projects-title {
     min-height: 30vh; }
+    #projects .projects-title h1 {
+      font-size: 30px; }
   #projects .project-boxes {
     flex-direction: column; }
-    #projects .project-boxes .project-box1, #projects .project-boxes .project-box2, #projects .project-boxes .project-box3 {
+    #projects .project-boxes .project-box1,
+    #projects .project-boxes .project-box2,
+    #projects .project-boxes .project-box3 {
       margin-right: 0px;
       padding-top: 10px;
       padding-bottom: 10px; }
-      #projects .project-boxes .project-box1 h1, #projects .project-boxes .project-box2 h1, #projects .project-boxes .project-box3 h1 {
+      #projects .project-boxes .project-box1 h1,
+      #projects .project-boxes .project-box2 h1,
+      #projects .project-boxes .project-box3 h1 {
         padding: 15px 0px; }
-      #projects .project-boxes .project-box1 img, #projects .project-boxes .project-box2 img, #projects .project-boxes .project-box3 img {
-        padding: 10px 0px; } }
+      #projects .project-boxes .project-box1 img,
+      #projects .project-boxes .project-box2 img,
+      #projects .project-boxes .project-box3 img {
+        padding: 10px 0px; }
+  .contact h1 {
+    font-size: 30px; }
+  .contact form {
+    align-items: stretch;
+    width: 100%; }
+    .contact form .label {
+      width: 90%;
+      margin: auto; }
+    .contact form button {
+      width: 50%;
+      margin: auto; } }
 
 @media only screen and (max-width: 1068px) {
   #projects .projects-title {
@@ -294,12 +382,20 @@
   #projects .project-boxes {
     flex-direction: column;
     width: 90%; }
-    #projects .project-boxes .project-box1, #projects .project-boxes .project-box2, #projects .project-boxes .project-box3 {
+    #projects .project-boxes .project-box1,
+    #projects .project-boxes .project-box2,
+    #projects .project-boxes .project-box3 {
       margin-bottom: 40px;
       padding: 0px; }
-      #projects .project-boxes .project-box1 h1, #projects .project-boxes .project-box2 h1, #projects .project-boxes .project-box3 h1 {
+      #projects .project-boxes .project-box1 h1,
+      #projects .project-boxes .project-box2 h1,
+      #projects .project-boxes .project-box3 h1 {
         padding: 20px 0px; }
-      #projects .project-boxes .project-box1 p, #projects .project-boxes .project-box2 p, #projects .project-boxes .project-box3 p {
+      #projects .project-boxes .project-box1 p,
+      #projects .project-boxes .project-box2 p,
+      #projects .project-boxes .project-box3 p {
         padding: 10px; }
-      #projects .project-boxes .project-box1 img, #projects .project-boxes .project-box2 img, #projects .project-boxes .project-box3 img {
+      #projects .project-boxes .project-box1 img,
+      #projects .project-boxes .project-box2 img,
+      #projects .project-boxes .project-box3 img {
         padding: 0px; } }

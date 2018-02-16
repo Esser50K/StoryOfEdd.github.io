@@ -113,6 +113,7 @@
             transform: translateY(20px); } }
 
 #about {
+  overflow-x: hidden;
   min-height: 100vh;
   background: url("./../img/Portofolio Background1.svg");
   background-repeat: no-repeat;

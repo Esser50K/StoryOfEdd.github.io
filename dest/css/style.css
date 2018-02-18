@@ -3,8 +3,8 @@
   padding: 0; }
 
 .container {
-  background: -webkit-gradient(linear, left top, left bottom, from(#00798C), to(#050F22));
-  background: linear-gradient(to bottom, #00798C, #050F22); }
+  background: -webkit-gradient(linear, left top, left bottom, from(#00798C), to(#021532));
+  background: linear-gradient(to bottom, #00798C, #021532); }
   .container .work {
     min-height: 10vh;
     display: -webkit-box;
@@ -115,7 +115,7 @@
 #about {
   overflow-x: hidden;
   min-height: 100vh;
-  background: url("./../img/Portofolio Background1.svg");
+  background: url("./../img/cover-01.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -129,9 +129,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;
   position: relative; }
   #about .panel {
     color: white;
@@ -146,15 +146,9 @@
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 90%;
+    width: 50%;
+    margin: 10% 0px 0px 10%;
     min-height: 60vh; }
-    #about .panel .myself {
-      -webkit-box-flex: 2;
-          -ms-flex: 2;
-              flex: 2; }
-      #about .panel .myself img {
-        height: 300px;
-        border-radius: 50%; }
     #about .panel .boxes {
       min-height: 50vh;
       -webkit-box-flex: 1;
@@ -181,7 +175,8 @@
             -ms-flex: 1;
                 flex: 1; }
         #about .panel .boxes .box1 h1 {
-          font-size: 45px;
+          text-align: center;
+          font-size: 35px;
           font-family: "Didact Gothic", sans-serif;
           margin: 5px 0px; }
         #about .panel .boxes .box1 p {
@@ -189,7 +184,7 @@
           line-height: 2em;
           font-family: "Work Sans", sans-serif; }
         #about .panel .boxes .box1 span {
-          color: #BC402D; }
+          color: rgb(189, 70, 52); }
       #about .panel .boxes .box2 {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -242,25 +237,7 @@
             transform: translate(0px, 0px);
     -webkit-transition: all 1s;
     transition: all 1s; }
-  #about .to-projects {
-    min-height: 10vh;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    #about .to-projects a {
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-      border: 1px solid white;
-      padding: 10px;
-      border-radius: 5px; }
+
 
 @-webkit-keyframes starFall {
   0% {
@@ -376,8 +353,7 @@
 
 #projects {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#074937), to(#042538));
-  background: linear-gradient(#074937, #042538); }
+  }
   #projects .projects-title {
     min-height: 30vh;
     display: -webkit-box;
@@ -390,8 +366,8 @@
         -ms-flex-align: center;
             align-items: center;
     font-family: "Didact Gothic", sans-serif;
-    font-size: 35px;
-    color: white; }
+    font-size: 25px;
+    color: black; }
   #projects .project-boxes {
     min-height: 60vh;
     display: -webkit-box;
@@ -404,6 +380,7 @@
             justify-content: space-between; }
     #projects .project-boxes .project-box1, #projects .project-boxes .project-box2, #projects .project-boxes .project-box3 {
       background-color: #F9F9F9;
+      box-shadow: 3px 3px 3px rgb(184, 184, 184);
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -477,7 +454,7 @@
       justify-content: space-around;
   background-color: #F9F9F9; }
   .contact h1 {
-    font-size: 2.5em;
+    font-size: 30px;
     font-family: "Didact Gothic", sans-serif;
     padding: 20px 30px; }
   .contact form {
@@ -573,25 +550,18 @@ footer {
   .intro :nth-child(2) {
     font-size: 20px; }
   #about {
-    background-image: url("./../img/Portofolio Background Mobile.svg"); }
+    background-image: url('./../img/cover-mobile-01.svg'); }
     #about .to-projects {
       display: none; }
     #about .panel {
+      
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
       width: 95%;
       margin: auto;
-      min-height: 80vh; }
-      #about .panel .myself {
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1;
-        text-align: center;
-        padding-bottom: 40px;
-        display: none; }
-        #about .panel .myself img {
-          height: 200px; }
+      min-height: 100vh; }
+
       #about .panel .boxes {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;

@@ -1,2 +1,2 @@
 # StoryOfEdd.github.io
-Personal Portofolio
+Personal Portfolio
